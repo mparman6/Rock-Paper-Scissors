@@ -6,9 +6,9 @@ $(document).ready(function() {
     $('.hidden').toggleClass("off");
   });
 
-  $("").on("click", function() {
-    var randomPick = Math.floor(Math.random() * comPicks.length);
-    alert(randomPick);
+  $(".weapon").on("click", function() {
+    var randomPick = Math.floor(Math.random() * compPicks.length);
+    alert("it works");
   });
-  
+
 });
