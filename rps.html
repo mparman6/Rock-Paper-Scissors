@@ -4,6 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Rock Paper Scissor Game</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <body>
   <div class="container">
@@ -25,15 +26,35 @@
     </div>
     <div class="col-md-4 hidden" data-state="start">
     <br>
-        <button class="btn btn-info btn-block">ROCK</button>  
+        <button class="btn btn-info btn-block" data-state="weapon">ROCK</button>  
     </div>
     <div class="col-md-4 hidden" data-state="start">
     <br>
-        <button class="btn btn-info btn-block">PAPER</button>  
+        <button class="btn btn-info btn-block" data-state="weapon">PAPER</button>  
     </div>
     <div class="col-md-4 hidden" data-state="start">
     <br>
-        <button class="btn btn-info btn-block">SCISSORS</button>  
+        <button class="btn btn-info btn-block" data-state="weapon">SCISSORS</button>  
+    </div>
+    <div class="row">
+      <div class="col-md-3 hidden">
+        <h1>YOU</h1>
+        <h2></h2>
+      </div>
+      <div class="col-md-3 col-md-offset-6 hidden">
+        <h1>OPPONENT</h1>
+        <h2></h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3 hidden">
+        <h1>YOU</h1>
+        <h2></h2>
+      </div>
+      <div class="col-md-3 col-md-offset-6 hidden">
+        <h1>OPPONENT</h1>
+        <h2></h2>
+      </div>
     </div>
   </div>
   
