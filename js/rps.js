@@ -2,36 +2,30 @@ $(document).ready(function() {
   var compPicks = ["Rock", "Paper", "Scissors"];
   var randomPick = Math.floor(Math.random() * compPicks.length);
 
-  $('#start').on('click', function() {
-    $('.hidden').toggleClass("hidden");
-    $('.hidden').toggleClass("off");
+  // Click on start button to reveal game
+  $("#start").on("click", function() {
+    $(".hidden").toggleClass("hidden");
+    $(".hidden").toggleClass("off");
   });
 
+  // Add click events to user choices
+  // and show their choice
   $("#rock").on("click", function() {
-    var randomPick = Math.floor(Math.random() * compPicks.length);
-    $("#opp").fadeIn(250, function() {
-      $(this).html(compPicks[randomPick]);
-    });
-
-    $("#you").html("Rock");
+   $("#userChoice").html("Rock");
   });
-
   $("#paper").on("click", function() {
-    var randomPick = Math.floor(Math.random() * compPicks.length);
-    $("#opp").fadeIn(250, function() {
-      $(this).html(compPicks[randomPick]);
-    });
-
-    $("#you").html("Paper");
+   $("#userChoice").html("Paper");
   });
-
   $("#scissors").on("click", function() {
-    var randomPick = Math.floor(Math.random() * compPicks.length);
-    $("#opp").fadeIn(250, function() {
-      $(this).html(compPicks[randomPick]);
-    });
-
-    $("#you").html("Scissors");
+   $("#userChoice").html("Scissors");
   });
 
+  // Randomly generate computer choice
+  // and show it 
+  /*$("#rock").on("click", function() {
+    var randomPick = Math.floor(Math.random() * compPicks.length);
+    $("#compChoice").fadeIn(250, function() {
+      $("#compChoice").html(compPicks[randomPick]);
+    });
+*/
 });
