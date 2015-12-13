@@ -22,10 +22,9 @@ $(document).ready(function() {
 
   // Randomly generate computer choice
   // and show it 
-  /*$("#rock").on("click", function() {
+  $("#rock").on("click", function() {
     var randomPick = Math.floor(Math.random() * compPicks.length);
-    $("#compChoice").fadeIn(250, function() {
-      $("#compChoice").html(compPicks[randomPick]);
+    $("#compChoice").html(compPicks[randomPick]);
     });
-*/
+
 });
