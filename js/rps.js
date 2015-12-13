@@ -26,5 +26,14 @@ $(document).ready(function() {
     var randomPick = Math.floor(Math.random() * compPicks.length);
     $("#compChoice").html(compPicks[randomPick]);
     });
+  $("#paper").on("click", function() {
+    var randomPick = Math.floor(Math.random() * compPicks.length);
+    $("#compChoice").html(compPicks[randomPick]);
+    });
+    
+  $("#scissors").on("click", function() {
+    var randomPick = Math.floor(Math.random() * compPicks.length);
+    $("#compChoice").html(compPicks[randomPick]);
+    });
 
 });
