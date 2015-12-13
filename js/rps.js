@@ -1,6 +1,9 @@
 $(document).ready(function() {
   var compPicks = ["Rock", "Paper", "Scissors"];
   var randomPick = Math.floor(Math.random() * compPicks.length);
+  var computerPick;
+  var userPick;
+
 
   // Click on start button to reveal game
   $("#start").on("click", function() {
@@ -10,30 +13,15 @@ $(document).ready(function() {
 
   // Add click events to user choices
   // and show their choice
-  $("#rock").on("click", function() {
-   $("#userChoice").html("Rock");
-  });
-  $("#paper").on("click", function() {
-   $("#userChoice").html("Paper");
-  });
-  $("#scissors").on("click", function() {
-   $("#userChoice").html("Scissors");
+  $(".user").on("click", function() {
+   var randomPick = Math.floor(Math.random() * compPicks.length);
+   computerPick = compPicks[randomPick];
+   userPick = compPicks[this.id];
+   $("#comp").html(computerPick);
   });
 
-  // Randomly generate computer choice
-  // and show it 
-  $("#rock").on("click", function() {
-    var randomPick = Math.floor(Math.random() * compPicks.length);
-    $("#compChoice").html(compPicks[randomPick]);
-    });
-  $("#paper").on("click", function() {
-    var randomPick = Math.floor(Math.random() * compPicks.length);
-    $("#compChoice").html(compPicks[randomPick]);
-    });
-    
-  $("#scissors").on("click", function() {
-    var randomPick = Math.floor(Math.random() * compPicks.length);
-    $("#compChoice").html(compPicks[randomPick]);
-    });
-
+  $(".user").on("click", function() {
+    $("#you").html([this.id]);
+  });
+ 
 });
