@@ -72,13 +72,13 @@ $(document).ready(function() {
 
   function roundReset() {
     if (userScore === 3) {
-      $(".modal-body").html("YOU WIN!");
+      $(".modal-body").html("YOU WIN!    Reload page to play again!");
       $("#modal").modal();
       roundCount++
       $("#roundCount").html(roundCount);
     } if (compScore === 3) {
       roundCount++
-      $(".modal-body").html("YOU LOSE!");
+      $(".modal-body").html("YOU LOSE!   Reload page to play again!");
       $("#modal").modal();
       $("#roundCount").html(roundCount);
     }
