@@ -5,6 +5,7 @@ $(document).ready(function() {
   var userPick;
   var userScore = 0
   var compScore = 0
+  var roundCount = 0
 
   // Click on start button to reveal game
   $("#start").on("click", function() {
@@ -19,6 +20,7 @@ $(document).ready(function() {
     computerPick = compPicks[randomPick];
     userPick = $(this).attr("data-choice");
     gameResults();
+    roundReset();
     $("#comp").html(computerPick);
   });
 
@@ -65,6 +67,20 @@ $(document).ready(function() {
         userScore++
         $("#userWins").html(userScore);
       }
+    }
+  }
+
+  function roundReset() {
+    if (userScore === 3) {
+      $(".modal-body").html("YOU WIN!");
+      $("#modal").modal();
+      roundCount++
+      $("#roundCount").html(roundCount);
+    } if (compScore === 3) {
+      roundCount++
+      $(".modal-body").html("YOU LOSE!");
+      $("#modal").modal();
+      $("#roundCount").html(roundCount);
     }
   }
 });
