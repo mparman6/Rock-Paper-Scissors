@@ -27,9 +27,9 @@
     <div class="row hidden">
       <div class="col-md-4">
         <h2>PICK</h2>
-        <button class="btn btn-danger btn-block btn-lg user" id="Rock">ROCK</button>
-        <button class="btn btn-danger btn-block btn-lg user" id="Paper">PAPER</button>
-        <button class="btn btn-danger btn-block btn-lg user" id="Scissors">SCISSORS</button>
+        <button class="btn btn-danger btn-block btn-lg user" data-choice="Rock">ROCK</button>
+        <button class="btn btn-danger btn-block btn-lg user" data-choice="Paper">PAPER</button>
+        <button class="btn btn-danger btn-block btn-lg user" data-choice="Scissors">SCISSORS</button>
         <button class="btn-info btn-block btn-lg" disabled="disabled"><span id="you"></span></button>
       </div>
       <div class="col-md-4">
@@ -58,9 +58,9 @@
     <tbody class="heading">
       <tr class="info">
         <td></td>
-        <td id="userWins">Column content</td>
-        <td id="compWins">Column content</td>
-        <td id="roundCount">Column content</td>
+        <td id="userWins"></td>
+        <td id="compWins"></td>
+        <td id="roundCount"></td>
       </tr>
     </tbody>
   </table>
