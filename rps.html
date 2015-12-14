@@ -32,7 +32,10 @@
         <button class="btn btn-danger btn-block btn-lg user" id="Scissors">SCISSORS</button>
         <button class="btn-info btn-block btn-lg" disabled="disabled"><span id="you"></span></button>
       </div>
-      <div class="col-md-4 col-md-offset-4">
+      <div class="col-md-4">
+       <button type="button" class="btn btn-default btn-lg btn-block" disabled="disabled" id="result"></button>
+      </div>
+      <div class="col-md-4">
         <h2>PICK</h2>
         <button class="btn btn-danger btn-block btn-lg" disabled="disabled">ROCK</button>
         <button class="btn btn-danger btn-block btn-lg" disabled="disabled">PAPER</button>
@@ -55,9 +58,9 @@
     <tbody class="heading">
       <tr class="info">
         <td></td>
-        <td>Column content</td>
-        <td>Column content</td>
-        <td>Column content</td>
+        <td id="userWins">Column content</td>
+        <td id="compWins">Column content</td>
+        <td id="roundCount">Column content</td>
       </tr>
     </tbody>
   </table>

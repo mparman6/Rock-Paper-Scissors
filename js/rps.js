@@ -23,5 +23,17 @@ $(document).ready(function() {
   $(".user").on("click", function() {
     $("#you").html([this.id]);
   });
- 
+
+function gameLogic(userPick, computerPick) {
+  if(userPick === computerPick) {
+    $("#userWins").html("You got a tie!");
+  } else if (userPick === "Rock") {
+    if(computerPick === "Paper") {
+      $("#compWins").html("1");
+    } else {
+      $("#userWins").html("1");
+    }
+  }
+}
 });
+
